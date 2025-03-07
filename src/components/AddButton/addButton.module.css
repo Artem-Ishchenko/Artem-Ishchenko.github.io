@@ -1,0 +1,49 @@
+.addButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 266px;
+  height: 180px;
+  background-color: transparent;
+  border: 1px dashed #526eff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.addButton:hover .addButton__circle {
+  background-color: #3652e3;
+  opacity: 1;
+}
+
+.addButton__circle {
+  width: 44px;
+  height: 44px;
+  background-color: #526eff;
+  opacity: 20%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: opacity 0.3s;
+}
+
+.addButton__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.addButton__paragraph {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 1000px) {
+  .addButton {
+    width: 100%;
+  }
+}

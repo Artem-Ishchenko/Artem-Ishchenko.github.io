@@ -1,0 +1,41 @@
+.closeComponent {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.closeComponent__btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.closeComponent__btn::before,
+.closeComponent__btn::after {
+  content: "";
+  position: absolute;
+
+  width: 24px;
+  height: 2px;
+  border-radius: 12px;
+  background: #526eff;
+  transform: translate(-50%, -50%);
+}
+
+.closeComponent__btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.closeComponent__btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 1000px) {
+  .closeComponent {
+    top: 25px;
+    right: 25px;
+  }
+}

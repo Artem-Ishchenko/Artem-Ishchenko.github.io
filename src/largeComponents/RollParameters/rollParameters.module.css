@@ -1,0 +1,71 @@
+.rollParameters {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.rollParameters__rollItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.rollParameters__rollItemBtn {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rollParameters__rollItemBtn-10 {
+  width: 142px;
+  height: 57px;
+}
+
+.rollParameters__rollItemBtn-25 {
+  width: 180px;
+  height: 57px;
+}
+.rollParameters__rollItemBtn-0 {
+  width: 75px;
+  height: 57px;
+}
+.rollParameters__rollItemBtn-032 {
+  width: 140px;
+  height: 57px;
+}
+.rollParameters__rollItemBtn-064 {
+  width: 180px;
+  height: 57px;
+}
+
+@media (max-width: 1000px) {
+  .rollParameters {
+    gap: 24px;
+  }
+  .rollParameters__rollItemBtn {
+    gap: 8px;
+  }
+  .rollParameters__rollItemBtn-10 {
+    width: 118px;
+    height: 44px;
+  }
+
+  .rollParameters__rollItemBtn-25 {
+    width: 148px;
+    height: 44px;
+  }
+  .rollParameters__rollItemBtn-0 {
+    width: 50px;
+    height: 44px;
+  }
+  .rollParameters__rollItemBtn-032 {
+    width: 118px;
+    height: 44px;
+  }
+  .rollParameters__rollItemBtn-064 {
+    width: 148px;
+    height: 44px;
+  }
+}

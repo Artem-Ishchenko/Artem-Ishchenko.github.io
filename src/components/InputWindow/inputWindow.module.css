@@ -1,0 +1,36 @@
+.inputWindow {
+  width: 266px;
+  height: 180px;
+  padding: 18px;
+  padding-top: 12px;
+  background-color: transparent;
+  border: 1px dashed #526eff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.inputWindow__header {
+  display: flex;
+  position: relative;
+}
+.inputWindow__h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.inputWindow__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .inputWindow {
+    width: 100%;
+  }
+}

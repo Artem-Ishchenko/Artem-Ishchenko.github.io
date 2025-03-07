@@ -1,0 +1,13 @@
+.roomParameters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.roomParameters__room {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}

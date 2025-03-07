@@ -1,0 +1,25 @@
+.windowsParameters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.windowsParameters__windowsList {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1000px) {
+  .windowsParameters {
+    margin-top: 24px;
+  }
+  .windowsParameters__windowsList {
+    gap: 24px;
+    width: 100%;
+  }
+  .windowsParameters__windowsList-item {
+    width: 100%;
+  }
+}
