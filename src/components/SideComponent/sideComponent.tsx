@@ -32,7 +32,7 @@ const SideComponent: FC<SideComponentProps> = ({
         id={id}
         type="text"
         inputMode="decimal"
-        value={value === "0" ? "" : value}
+        value={value === "0" ? "" : value === "." ? "" : value}
         onChange={handleInputChange}
         placeholder={placeholder}
       />
