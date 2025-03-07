@@ -20,7 +20,7 @@ const SideComponent: FC<SideComponentProps> = ({
 }) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
-    if (/^\d*\.?\d{0,1}$/.test(inputValue)) {
+    if (/^\d*\.?\d{0,1}$/.test(inputValue) && inputValue !== ".") {
       onChange(inputValue);
     }
   };
@@ -32,7 +32,7 @@ const SideComponent: FC<SideComponentProps> = ({
         id={id}
         type="text"
         inputMode="decimal"
-        value={value === "0" ? "" : value === "." ? "" : value}
+        value={value === "0" ? "" : value}
         onChange={handleInputChange}
         placeholder={placeholder}
       />
