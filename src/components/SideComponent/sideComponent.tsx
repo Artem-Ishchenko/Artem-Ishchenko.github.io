@@ -31,6 +31,7 @@ const SideComponent: FC<SideComponentProps> = ({
         className={styles["sideComponent__input"]}
         id={id}
         type="text"
+        inputMode="decimal"
         value={value === "0" ? "" : value}
         onChange={handleInputChange}
         placeholder={placeholder}
